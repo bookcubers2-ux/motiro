@@ -158,7 +158,7 @@ label{font-weight:700}
 /* nivel 3 */
 .hilosWrap{position:relative;width:100%;max-width:760px;margin:0 auto;aspect-ratio:1/1}
 @supports not (aspect-ratio:1/1){.hilosWrap{height:0;padding-bottom:100%}}
-.hilosWrap svg{position:absolute;inset:0;width:100%;height:100%}
+.hilosWrap>svg{position:absolute;inset:0;width:100%;height:100%}
 .nodo{position:absolute;transform:translate(-50%,-50%);width:clamp(56px,13%,96px);border:3px solid var(--tinta);border-radius:14px;background:var(--papel);padding:4px 3px;font-size:.62rem;line-height:1.1;font-weight:700;text-align:center;cursor:pointer;box-shadow:var(--sombra);z-index:2}
 .nodo{display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
 .nodo svg{width:44px;height:44px;display:block;margin:0 auto 2px;flex:none}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro" data-lector="0" data-calma="0">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MOTIRÕ · la ley que nadie pudo comprar</title>
+<meta name="description" content="Juego web educativo y accesible: sos un proyecto de ley que camina Santa Cruz de la Sierra ganándose, con generosidad, las firmas de la gente a la que va a gobernar. Un Impact Arcade de GivingTuesday + Games for Change.">
+<meta name="theme-color" content="#1E7B3C">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 38'%3E%3Cpath d='M5 2h16l6 6v28H5z' fill='%23FFFDF7' stroke='%231F2328' stroke-width='2'/%3E%3Ccircle cx='12' cy='15' r='3' fill='%23fff' stroke='%231F2328' stroke-width='1.5'/%3E%3Ccircle cx='20' cy='15' r='3' fill='%23fff' stroke='%231F2328' stroke-width='1.5'/%3E%3Ccircle cx='13' cy='15.5' r='1.3'/%3E%3Ccircle cx='21' cy='15.5' r='1.3'/%3E%3Cpath d='M13 22q3 3 6 0' stroke='%231F2328' stroke-width='1.5' fill='none'/%3E%3C/svg%3E">
+<!--
+  MOTIRÕ · la ley que nadie pudo comprar
+  Motor + Mundo 1 "La Ciudad de los Anillos" + Modo Pleno.
+  Un solo archivo (CSS y JS en línea; los datos del mundo van en mundo-ciudad.js).
+  Rutas: index.html (jugar) · index.html?pleno (proyector) · index.html?test (pruebas) · index.html?mundo=declaracion80
+  Licencia MIT. Sin rastreo, sin analítica, sin datos personales.
+  Cómo crear un mundo nuevo: ver el encabezado de mundo-ciudad.js.
+-->
+<style>
+/*__FONT__*/
+/*__CSS__*/
+.inl{width:1.1em;height:1.1em;vertical-align:-.15em;display:inline-block}
+</style>
+<script>
+/* Configuración del evento (opcional). Si quedan vacías, todo funciona por tipeo/dictado. */
+window.PLENO_FORM_URL = '';   /* ej.: 'https://docs.google.com/forms/d/e/XXXX/viewform?usp=pp_url&entry.123={codigo}' */
+window.PLENO_CSV_URL  = '';   /* ej.: 'https://docs.google.com/spreadsheets/d/e/XXXX/pub?output=csv' */
+</script>
+</head>
+<body>
+<!--__SVG__-->
+<header id="barra">
+  <button class="logo" type="button" aria-label="MOTIRÕ">MOTIRÕ</button>
+  <div id="fichas" role="status"></div>
+  <button class="icobtn" id="btnTema" type="button" aria-pressed="false" aria-label="Modo oscuro"><svg><use href="#ui-tema"></use></svg></button>
+  <button class="icobtn" id="btnMusica" type="button" aria-pressed="true" aria-label="Silenciar música"><svg><use href="#ui-musica"></use></svg></button>
+</header>
+<main id="escena" aria-live="off"></main>
+<div id="live" class="sr" aria-live="polite" role="status"></div>
+<div id="subt" aria-live="polite" role="status"></div>
+<button class="btn t oculto" id="pausaGlobal" type="button">Pausa</button>
+<noscript><p style="padding:1rem">MOTIRÕ necesita JavaScript. / MOTIRÕ needs JavaScript.</p></noscript>
+<script>/*__QR__*/</script>
+<script src="mundo-ciudad.js"></script>
+<script>
+/*__CORE__*/
+/*__NIVELES__*/
+/*__PLENO__*/
+</script>
+</body>
+</html>
